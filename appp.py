@@ -9,7 +9,7 @@ from sklearn.preprocessing import StandardScaler
 # -----------------------------
 @st.cache_data
 def load_data():
-    data = pd.read_csv(r"C:\Users\molli\Downloads\diabetes (2).csv")
+    data = pd.read_csv("diabetes.csv")
 
     # Fix zero values
     cols = ["Glucose", "BloodPressure", "SkinThickness", "Insulin", "BMI"]
